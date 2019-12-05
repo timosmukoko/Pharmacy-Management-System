@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7200E34-8D29-40CD-B6FE-32FFE8F05F2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessEntities</RootNamespace>
+    <AssemblyName>BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientFactory.cs" />
+    <Compile Include="Consultation.cs" />
+    <Compile Include="ConsutationFactory.cs" />
+    <Compile Include="Day.cs" />
+    <Compile Include="DayFactory.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeFactory.cs" />
+    <Compile Include="Gp.cs" />
+    <Compile Include="GpFactory.cs" />
+    <Compile Include="IClient.cs" />
+    <Compile Include="IConsultation.cs" />
+    <Compile Include="IDay.cs" />
+    <Compile Include="IEmployee.cs" />
+    <Compile Include="IGp.cs" />
+    <Compile Include="IItem.cs" />
+    <Compile Include="ILog.cs" />
+    <Compile Include="IOrder.cs" />
+    <Compile Include="IPresciption.cs" />
+    <Compile Include="IProductLine.cs" />
+    <Compile Include="IReport.cs" />
+    <Compile Include="IRoster.cs" />
+    <Compile Include="IRoster_has_employees.cs" />
+    <Compile Include="IStockOrder.cs" />
+    <Compile Include="ISupplier.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemFactory.cs" />
+    <Compile Include="ITransaction.cs" />
+    <Compile Include="ITransaction_has_items.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LogFactory.cs" />
+    <Compile Include="MaxCodes.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderFactory.cs" />
+    <Compile Include="Prescription.cs" />
+    <Compile Include="PrescriptionFactory.cs" />
+    <Compile Include="ProductLine.cs" />
+    <Compile Include="ProductLineFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportFactory.cs" />
+    <Compile Include="Roster.cs" />
+    <Compile Include="RosterFactory.cs" />
+    <Compile Include="Roster_has_employees.cs" />
+    <Compile Include="Roster_has_employeesFactory.cs" />
+    <Compile Include="StockOrder.cs" />
+    <Compile Include="StockOrderFactory.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierFactory.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionFactory.cs" />
+    <Compile Include="Transaction_has_items.cs" />
+    <Compile Include="Transaction_has_itemsFactory.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserFactory.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
